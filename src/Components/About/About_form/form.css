@@ -1,0 +1,111 @@
+.Modal {
+  width: 470px;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Modal .cross {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  left: 44% !important;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  transition: .5s;
+}
+.Modal .cross:hover {
+  transform: rotate(180deg);
+}
+.Modal h1 {
+  font-size: 35px;
+}
+.Modal h4 {
+  width: 370px;
+  font-size: 16px;
+  color: #303030;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.Modal form {
+  width: 100%;
+  margin-top: 5px;
+}
+.Modal form label {
+  color: red;
+}
+.Modal form input {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  width: 87% !important;
+  padding: 17px 17px;
+  background-color: #f0f0f0;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  color: black !important;
+}
+.Modal form input::placeholder {
+  color: #757575;
+}
+
+.Modal form button {
+  background: linear-gradient(#0072ff, #65c4ff);
+  color: white;
+  border: none;
+  width: 85%;
+  border-radius: 15px;
+  padding: 15px 100px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 15px;
+  transition: .5s;
+}
+.Modal form button:hover {
+  transform: scale(1.1);
+}
+.Modal form button:active {
+ transform: scale(0.9);
+ opacity: .5;
+}
+.Modal span {
+  font-size: 11px;
+  width: 300px;
+  color: #0c0c0c;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .Modal {
+    width: 97%;
+    height: 570px !important;
+  }
+  .active {
+    left: 7px;
+  }
+  .Modal h1 {
+    width: 80%;
+    font-size: 26px;
+  }
+  .Modal h4 {
+    width: 80%;
+  }
+  .Modal span {
+    width: 80%;
+    margin-top: 5px;
+  }
+  .Modal .cross {
+    left: 41% !important;
+  }
+}

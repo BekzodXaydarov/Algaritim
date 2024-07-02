@@ -1,0 +1,273 @@
+.VideoPlayer {
+  width: 100%;
+  height: 100%;
+  margin-top: 80px !important;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.videoplayer_left video {
+  width: 100% !important;
+  height: 100% !important;
+}
+.videoplayer_left h2 {
+  color: black;
+  font-size: 35px;
+}
+.videoplayer_left .videoplayer_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.videoplayer_left .videoplayer_after {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: black;
+  margin-top: 10px;
+}
+.videoplayer_left form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+  gap: 30px;
+}
+
+.videoplayer_left form input {
+  border: none;
+  padding: 5px 15px;
+  width: 70% !important;
+  height: 50px;
+  outline: none;
+  color: black !important;
+  border: none;
+  background-color: transparent !important;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+}
+.videoplayer_left form input::placeholder {
+  color: black;
+  font-size: 15px;
+}
+
+.videoplayer_left form .sumbit {
+  width: 35% !important;
+  color: black;
+}
+/* 
+.comments {
+  margin-top: 50px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 15px;
+  row-gap: 15px;
+  height: 70px;
+  overflow: hidden !important;
+}
+.comments .comments_warp {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+  row-gap: 25px;
+}
+.comments h1 {
+  color: black !important;
+  margin-top: 15px;
+}
+.comments .comment {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+} */
+
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: white !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black !important;
+  border-radius: 5px;
+}
+
+/* .comments_head_active {
+  height: 40vh;
+  overflow: auto !important;
+}
+.comments_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+.comments .comments_head button {
+  display: block !important;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 5px;
+} */
+
+.recommend {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  overflow: hidden;
+  gap: 15px;
+}
+.recommend_wraper {
+  display: flex;
+  animation: 40s slide infinite linear;
+  gap: 25px;
+}
+.recommend_wraper_second {
+  display: flex;
+  animation: 40s slide2 infinite linear;
+  gap: 25px;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.recommend .card {
+  width: 370px;
+  height: 370px;
+  cursor: pointer;
+}
+.recommend .card .card_header img {
+  width: 100%;
+  height: 250px;
+}
+.recommend .card .card_header {
+  height: 310px;
+}
+.recommend .card .card_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recommend .card .card_header h2 {
+  font-size: 20px;
+}
+.recommend .card .card_body p {
+  display: flex;
+  align-items: center;
+}
+.recommend .card .card_body p > img {
+  margin-right: 5px;
+}
+/* Dark mode */
+[data-theme="dark"] .videoplayer_left h2 {
+  color: white;
+  margin-top: 15px;
+}
+
+[data-theme="dark"] .videoplayer_after {
+  color: white !important;
+}
+[data-theme="dark"] .videoplayer_footer button {
+  color: white !important;
+}
+[data-theme="dark"] .videoplayer_left form input::placeholder {
+  background-color: transparent !important;
+  color: white !important;
+}
+[data-theme="dark"] .videoplayer_left form input {
+  background-color: transparent !important;
+  color: white !important;
+  border-bottom: 1px solid white;
+}
+[data-theme="dark"] .videoplayer_left form .sumbit {
+  color: white !important;
+}
+[data-theme="dark"] .comments h1 {
+  color: white !important;
+}
+[data-theme="dark"] .comments .comment {
+  background-color: white;
+  color: black;
+}
+[data-theme="dark"] .comments .comments_head button {
+  color: white;
+}
+[data-theme="dark"] .comments .comments_head_active {
+  background-color: black;
+}
+
+/* Media */
+@media screen and (max-width: 900px) {
+  .VideoPlayer {
+    display: block;
+    overflow-y: hidden !important;
+  }
+  /* .comments .comments_head {
+    width: 100%;
+  } */
+  .recommend_wraper {
+    display: flex !important;
+    gap: 25px;
+  }
+  .recommend .card {
+    width: 300px;
+  }
+  .recommend .card h2 {
+    font-size: 20px !important;
+  }
+  .recommend_active {
+    margin-top: 50px !important;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .videoplayer_left h2 {
+    font-size: 30px !important;
+  }
+  .recommend_wraper {
+    display: flex;
+    gap: 25px;
+  }
+  .recommend .card {
+    width: 300px !important;
+    height: 350px;
+  }
+  .recommend .card .card_header img {
+    height: 200px;
+  }
+  .recommend .card .card_header {
+    height: 280px;
+  }
+
+  .recommend .card h2 {
+    font-size: 20px !important;
+  }
+  .recommend .card .card_body {
+    margin-top: 0px !important;
+  }
+  .videoplayer_left form,
+  .videoplayer_left form input {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,149 @@
+.about {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  overflow: hidden;
+  background-position: 0;
+  background-image: url("../../assets/images/gif.gif");
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+}
+/* .about_video {
+  position: absolute;
+  z-index: 1;
+  width: 100vh;
+  height: 100%;
+} */
+
+.about h1 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  z-index: 2;
+}
+.about h1 span {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  line-height: 58.15px;
+}
+
+.about_info {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.about_info div {
+  width: 50%;
+  height: 100%;
+}
+.about_info_left {
+  padding-top: 100px;
+}
+.about_info .about_info_left h1 {
+  display: flex;
+  align-items: center;
+  color: black !important;
+  font-size: 50px;
+  gap: 5px;
+}
+.about_info .about_info_left p {
+  color: black !important;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.about_info .about_info_left p p span {
+  color: #ffbe00;
+}
+
+[data-theme="dark"] .btn {
+  background-color: #ffbe00 !important;
+  border: none;
+  color: black;
+  margin-top: 70px;
+  z-index: 2;
+}
+[data-theme="dark"] .about_info .about_info_left h1 {
+  color: white !important;
+}
+[data-theme="dark"] .about_info .about_info_left p {
+  color: white !important;
+}
+
+/* media  */
+@media screen and (max-width: 900px) {
+  .about {
+    width: 100%;
+    height: 339px;
+  }
+  .about h1 {
+    width: 100%;
+    font-size: 24px !important;
+  }
+  .about h1 span {
+    font-size: 35px !important;
+  }
+  .about .btn {
+    width: 33% !important;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  .about_video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    width: 100%;
+    height: 339px;
+  }
+  .about h1 {
+    width: 100%;
+    font-size: 24px !important;
+  }
+  .about h1 span {
+    font-size: 150% !important;
+  }
+  .about .btn {
+    width: 65% !important;
+    height: 30px;
+    font-size: 12px !important;
+    margin-left: 15px;
+  }
+  .about_info {
+    width: 100%;
+    height: 1000px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    margin-top: 50px;
+  }
+  .about_info div {
+    width: 350px !important;
+  }
+  .about_info_left h1 {
+    width: 100%;
+    font-size: 30px !important;
+  }
+  .about_info .about_info_right {
+    height: 700px !important;
+  }
+
+}

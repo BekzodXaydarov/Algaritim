@@ -1,0 +1,93 @@
+.course {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.course .card_wrapper {
+  height: 400px !important;
+}
+.course .Title {
+  margin-top: 50px;
+}
+
+.course .card {
+  width: 400px;
+  height: 320px;
+  text-align: left;
+  cursor: pointer !important;
+}
+
+.course .card .card_header_img {
+  width: 100% !important;
+  height: 55%;
+}
+.course .card h3 {
+  width: 100%;
+  height: 48px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5px;
+  font-family: Inter, sans-serif;
+  line-height: 24.2px;
+  color: black;
+  text-align: left !important;
+}
+.course .card .card_footer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.course .card .card_footer p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 15px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 16.94px;
+  text-align: left;
+}
+.course .card .card_footer p span {
+  font-weight: 500;
+  opacity: 50%;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+[data-theme="dark"] .card {
+  color: white !important;
+}
+[data-theme="dark"] .card h3 {
+  color: white;
+}
+
+/* Media */
+@media screen and (max-width: 900px) {
+  .course .card_wrapper {
+    width: 90%;
+  }
+  /* .course .card_wrapper ul {
+    background-color: transparent !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  } */
+}
+@media screen and (max-width: 500px) {
+  .course .card_wrapper {
+    height: 390px !important;
+  }
+  .card_wrapper .card {
+    width: 100% !important;
+    height: 400px !important;
+  }
+  .card .card_header_img {
+    height: 50% !important;
+  }
+}
