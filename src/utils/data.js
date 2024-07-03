@@ -19,12 +19,11 @@ export const kurslar = [
     Avatar: Avatar,
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Backend",
-    like: 0,
-    dislike: 0,
+    video_link:"https://www.youtube.com/embed/JH4qVqplC8E?si=Rjii3BUCNkVq6sF7"
   },
   {
     id: 2,
-    title: "Frontend darslar 12 oy davomida o`rganish",
+    title: "Html css js darslar 12 oy davomida o`rganish",
     after: "Azamjon Xolikov",
     It: "Azamjon Xolikov",
     Img: Front,
@@ -32,6 +31,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Frontend",
     comments: [],
+    video_link:"https://www.youtube.com/embed/dD2EISBDjWM?si=Aq-7I8MwIVHML7f6"
   },
   {
     id: 3,
@@ -43,6 +43,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Backend",
     comments: [],
+    video_link:"https://www.youtube.com/embed/Y8Tko2YC5hA?si=JdxargzliophQhfz"
   },
   {
     id: 4,
@@ -54,6 +55,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Backend",
     comments: [],
+    video_link:"https://www.youtube.com/embed/ad79nYk2keg?si=qHEYNfjAt3cIwpwJ"
   },
   {
     id: 5,
@@ -65,50 +67,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Frontend",
     comments: [],
-  },
-  {
-    id: 6,
-    title: "Python dasturlash tili 12 oy davomida serverlar yaratish",
-    after: "Azamjon Xolikov",
-    It: "Azamjon Xolikov",
-    Img: python,
-    Avatar: Avatar,
-    video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
-    category: "Backend",
-    comments: [],
-  },
-  {
-    id: 7,
-    title: "Suniy intelekt darslar 12 oy damovida o`rganish",
-    after: "Azamjon Xolikov",
-    It: "Azamjon Xolikov",
-    Img: intelekt,
-    Avatar: Avatar,
-    video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
-    category: "Backend",
-    comments: [],
-  },
-  {
-    id: 8,
-    title: "Frontend va react darslar 12 oy davomida o`rganish",
-    after: "Azamjon Xolikov",
-    It: "Azamjon Xolikov",
-    Img: Front,
-    Avatar: Avatar,
-    video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
-    category: "Frontend",
-    comments: [],
-  },
-  {
-    id: 9,
-    title: "Python dasturlash tili 12 oy davomida serverlar yaratish",
-    after: "Azamjon Xolikov",
-    It: "Azamjon Xolikov",
-    Img: python,
-    Avatar: Avatar,
-    video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
-    category: "Backend",
-    comments: [],
+    video_link:"https://www.youtube.com/embed/dmdfiBgX9rI?si=syS2yZEBZi5iodE7"
   },
 ];
 export const Teachers = [

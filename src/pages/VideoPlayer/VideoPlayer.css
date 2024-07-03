@@ -5,9 +5,10 @@
   max-width: 1500px;
   margin: 0 auto;
 }
-.videoplayer_left video {
+.videoplayer_video {
   width: 100% !important;
-  height: 100% !important;
+  height: 800px;
+  margin-top: 10px;
 }
 .videoplayer_left h2 {
   color: black;
@@ -225,6 +226,10 @@
   /* .comments .comments_head {
     width: 100%;
   } */
+  .videoplayer_video {
+    width: 100%;
+    height: 100%;
+  }
   .recommend_wraper {
     display: flex !important;
     gap: 25px;
@@ -269,5 +274,9 @@
   .videoplayer_left form,
   .videoplayer_left form input {
     width: 100% !important;
+  }
+  .videoplayer_video {
+    width: 100%;
+    height: 350px;
   }
 }

@@ -3,14 +3,14 @@ import Teachers from "../../Components/Teachers/Teachers";
 import Course from "../../Components/Course/Course";
 import Extra from "../../Components/Extra/Extra";
 import About from "../../Components/About/About";
-import "./Home.css"
+import "./Home.css";
 
 const Home = ({ modal, setModal, handleToast }) => {
   return (
-    <div className="home">
+    <div>
       <About modal={modal} setModal={setModal} />
       <div className={`App  ${modal ? "opacity" : ""}`}>
-        <Course  />
+        <Course />
         <Teachers />
         <Extra handleToast={handleToast} />
       </div>

@@ -9,18 +9,14 @@
   text-align: center;
   margin-top: 100px;
   overflow: hidden;
-  background-position: 0;
-  background-image: url("../../assets/images/gif.gif");
-  background-repeat: no-repeat;
-  background-position: 0;
-  background-size: cover;
+  position: relative;
 }
-/* .about_video {
+.about_video {
   position: absolute;
   z-index: 1;
-  width: 100vh;
-  height: 100%;
-} */
+  width: 100%;
+  height: 95%;
+}
 
 .about h1 {
   font-size: 50px;
@@ -92,6 +88,7 @@
   .about h1 {
     width: 100%;
     font-size: 24px !important;
+    margin-bottom: 15px;
   }
   .about h1 span {
     font-size: 35px !important;
@@ -101,19 +98,35 @@
     height: 30px;
     font-size: 14px;
     margin-left: 15px;
+    margin-top: 15px;
   }
-  .about_video {
+  .about_info {
+    display: block;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+  }
+  .about_info div {
+    width: 500px !important;
+  }
+  .about_info_left h1 {
     width: 100%;
+    font-size: 30px !important;
+  }
+  .about_info .about_info_right {
+    height: 800px !important;
   }
 }
 
 @media screen and (max-width: 500px) {
   .about {
     width: 100%;
-    height: 339px;
+    height: 300px;
   }
   .about h1 {
-    width: 100%;
     font-size: 24px !important;
   }
   .about h1 span {
@@ -123,17 +136,18 @@
     width: 65% !important;
     height: 30px;
     font-size: 12px !important;
-    margin-left: 15px;
+  }
+  .about_video {
+    height: 175rem !important;
   }
   .about_info {
     width: 100%;
-    height: 1000px;
+    height: 650px;
     display: flex !important;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center !important;
-    margin-top: 50px;
   }
   .about_info div {
     width: 350px !important;
@@ -141,9 +155,16 @@
   .about_info_left h1 {
     width: 100%;
     font-size: 30px !important;
+    margin-top: 0;
+  }
+  .about_info_left {
+    padding-top: 0 !important;
   }
   .about_info .about_info_right {
-    height: 700px !important;
+    overflow: hidden; /* Ensure no overflow issues */
+    height: 600px !important;
   }
-
+  canvas {
+    display: block;
+  }
 }

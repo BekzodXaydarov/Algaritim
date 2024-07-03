@@ -17,13 +17,17 @@ const VideoPlayer = () => {
     <div className="VideoPlayer">
       <div className="videoplayer_left">
         <div>
-          <img width={"100%"} src={data?.Img} alt="" />
+          <iframe
+            src={data?.video_link}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            className="videoplayer_video"
+          ></iframe>
           <h2>{data.title}</h2>
           <div className="videoplayer_footer">
-            <div className="videoplayer_after">
-              <img src={data.Avatar} alt="" />
-              <p>{data.after}</p>
-            </div>
           </div>
         </div>
       </div>

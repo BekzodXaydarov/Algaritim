@@ -2,11 +2,10 @@ import React from "react";
 import "./About.css";
 import Button from "../mini_componts/Button/button";
 import { Model } from "../mini_componts/model/model";
-import Logo from "../../assets/images/head_logo.png";
 import { Canvas } from "@react-three/fiber";
 import model from "../../assets/3d/logo.glb";
-// import video from "../../assets/video/video1.MOV";
-import { OrbitControls } from "@react-three/drei";
+import video from "../../assets/video/video.mp4";
+import { CameraControls, OrbitControls } from "@react-three/drei";
 
 const About = ({ modal, setModal }) => {
   return (
@@ -16,14 +15,14 @@ const About = ({ modal, setModal }) => {
         data-theme="dark"
         id="about"
       >
-        {/* <video
+        <video
           src={video}
           autoPlay
           loop
           muted
           playsInline
           className="about_video"
-        ></video> */}
+        ></video>
         <h1 className="Title">
           <span>ALGORTIM TA`LIM</span>
           <br />
@@ -37,10 +36,7 @@ const About = ({ modal, setModal }) => {
       </div>
       <div className="about_info">
         <div className="about_info_left">
-          <h1>
-            {" "}
-          Algoritm Ta`lim
-          </h1>
+          <h1> Algoritm Ta`lim</h1>
           <p>
             Bizning maqsadimiz – kuchli akademik salohiyatimizdan to'gri
             foydalangan holda, davlatimiz taraqqiyotida ahamiyatli bo'lgan
@@ -56,11 +52,11 @@ const About = ({ modal, setModal }) => {
         </div>
         <div className="about_info_right">
           <Canvas camera={{ position: [0, 0, 3] }}>
-            <ambientLight intensity={2.0} />
+            <ambientLight intensity={1.5} />
             <hemisphereLight args={["#fff", "#333", 2.0]} />
             <directionalLight position={[0, 5, 0]} intensity={2.0} />
-            <pointLight position={[0,5,0]} intensity={2.0} />
-            <spotLight position={[0,5,0]} />
+            <pointLight position={[0, 5, 0]} intensity={2.0} />
+            <spotLight position={[0, 5, 0]} />
             <Model Model={model} />
             <OrbitControls />
           </Canvas>
