@@ -19,7 +19,7 @@ export const kurslar = [
     Avatar: Avatar,
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Backend",
-    video_link:"https://www.youtube.com/embed/JH4qVqplC8E?si=Rjii3BUCNkVq6sF7"
+    video_link: "https://www.youtube.com/embed/JH4qVqplC8E?si=Rjii3BUCNkVq6sF7",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Frontend",
     comments: [],
-    video_link:"https://www.youtube.com/embed/dD2EISBDjWM?si=Aq-7I8MwIVHML7f6"
+    video_link: "https://www.youtube.com/embed/dD2EISBDjWM?si=Aq-7I8MwIVHML7f6",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Backend",
     comments: [],
-    video_link:"https://www.youtube.com/embed/Y8Tko2YC5hA?si=JdxargzliophQhfz"
+    video_link: "https://www.youtube.com/embed/Y8Tko2YC5hA?si=JdxargzliophQhfz",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Backend",
     comments: [],
-    video_link:"https://www.youtube.com/embed/ad79nYk2keg?si=qHEYNfjAt3cIwpwJ"
+    video_link: "https://www.youtube.com/embed/ad79nYk2keg?si=qHEYNfjAt3cIwpwJ",
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ export const kurslar = [
     video: "https://youtu.be/b8Fk2u_C7i8?si=TdVOZHi6StzZhGqy",
     category: "Frontend",
     comments: [],
-    video_link:"https://www.youtube.com/embed/dmdfiBgX9rI?si=syS2yZEBZi5iodE7"
+    video_link: "https://www.youtube.com/embed/dmdfiBgX9rI?si=syS2yZEBZi5iodE7",
   },
 ];
 export const Teachers = [
@@ -130,5 +130,5 @@ export const Teachers = [
 ];
 
 export const ErrorState = (error, state, data, data2) => {
-  return error ? (state === "" ? data : null) : data2;
+  return error ? (state === "" ? data : data2) : data2;
 };

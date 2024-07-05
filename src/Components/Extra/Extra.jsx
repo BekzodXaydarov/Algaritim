@@ -10,9 +10,10 @@ const Extra = ({ handleToast }) => {
   const [error, setError] = useState(false);
   async function handleSubmit(e) {
     e.preventDefault();
-    if (ism === "" || tel === "" || tel.replace("_", "").length !== 17) {
+    if (ism === "" && tel === "" && tel.replace("_", "").length !== 17) {
       setError(true);
     } else {
+      e.target[2].disabled = true;
       try {
         const responsePhoto = await fetch(
           `https://api.telegram.org/bot${YOUR_BOT_TOKEN}/sendMessage?chat_id=${YOUR_CHAT_ID}&text=${encodeURI(
@@ -31,6 +32,7 @@ const Extra = ({ handleToast }) => {
         console.error("Xatolik yuz berdi:", error);
         handleToast("Xabar ketmadi", "error");
       }
+      e.target[2].disabled = false;
       setError(false);
     }
   }
@@ -75,7 +77,9 @@ const Extra = ({ handleToast }) => {
                 >
                   Telefonigizni Kiritmadingiz
                 </label>
-              ) : null
+              ) : (
+                <label htmlFor="phone">Telefoning nomeri</label>
+              )
             ) : (
               <label htmlFor="phone">Telefoning nomeri</label>
             )}
